@@ -36,6 +36,12 @@ const GlobalStyle = createGlobalStyle`
     font: 400 1.6rem sans-serif;
     color: ${props => props.theme.colors.text};
   }
+
+  @media screen and (min-width: 1100px) {
+    body > div  {
+      max-width: 992px;
+    }
+  }
 `
 
 export default GlobalStyle
