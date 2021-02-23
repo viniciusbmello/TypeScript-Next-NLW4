@@ -20,7 +20,16 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: ${props => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+    text-rendering: optimizeLegibility; 
+  }
+
+  body > div {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
   }
 
   body, input, button, textarea {

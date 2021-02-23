@@ -7,9 +7,6 @@ const IndexPage: NextPage = () => {
       <Head>
         <title>Create Next App</title>
       </Head>
-      <main>
-        <h1>Hello NLW</h1>
-      </main>
     </>
   )
 }
