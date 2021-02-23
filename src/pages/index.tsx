@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+
 import Profile from '../components/Profile'
 import CompletedChallanges from '../components/CompletedChallanges'
 import Countdown from '../components/Countdown'
