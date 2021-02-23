@@ -1,7 +1,4 @@
-# TypeScript-Next-NLW4
-A simple Pomodoro Timer app that works on browsers
-
-## Sobre este Projeto
+# Sobre este Projeto
 
 Site em [React.js](https://reactjs.org/) seguindo boas práticas de programação.
 A simple Pomodoro Timer app that works on browsers.
