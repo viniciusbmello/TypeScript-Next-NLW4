@@ -34,7 +34,6 @@ const GlobalStyle = createGlobalStyle`
 
   body, input, button, textarea {
     font: 400 1.6rem sans-serif;
-    user-select: none;
     color: ${props => props.theme.colors.text};
   }
 

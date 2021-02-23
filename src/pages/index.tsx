@@ -11,7 +11,7 @@ const IndexPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>NLW #4</title>
+        <title>Início | NLW#4</title>
       </Head>
       <Layout>
         <section>
