@@ -1,7 +1,9 @@
 # Sobre este Projeto
 
 Site em [React.js](https://reactjs.org/) seguindo boas práticas de programação.
+
 A simple Pomodoro Timer app that works on browsers.
+
 App construído durante as aulas da NLW #4.
 
 ## Ferramentas Utilizadas
