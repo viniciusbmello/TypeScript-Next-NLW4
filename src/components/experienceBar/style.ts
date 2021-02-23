@@ -24,6 +24,8 @@ const Layout = styled.header`
     height: 4px;
     border-radius: 2px;
     background: ${props => props.theme.colors.green};
+
+    transition: all 0.1s linear;
   }
 
   & > div > span {
@@ -31,6 +33,8 @@ const Layout = styled.header`
     font-size: 1rem;
     position: absolute;
     transform: translateX(-50%);
+
+    transition: all 0.1s linear;
   }
 
   & > button {
