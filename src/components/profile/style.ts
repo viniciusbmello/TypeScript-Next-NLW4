@@ -17,17 +17,17 @@ const Layout = styled.header`
   }
 
   & > div > strong {
-    font-size: 2.4rem;
+    font-size: 3.2rem;
   }
 
   & > div > p {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
   }
 
   & > div > p > svg {
-    margin-right: 0.5rem;
-    width: 1rem;
-    height: 1rem;
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
     fill: ${props => props.theme.colors.green};
   }
 `

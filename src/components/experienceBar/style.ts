@@ -7,22 +7,22 @@ const Layout = styled.header`
   }
 
   & > span {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 1rem;
   }
 
   & > div {
     position: relative;
     flex: 1;
-    height: 4px;
-    border-radius: 2px;
+    height: 8px;
+    border-radius: 4px;
     background: ${props => props.theme.colors.grayLine};
     /* margin: 0 1rem; */
   }
 
   & > div > div {
-    height: 4px;
-    border-radius: 2px;
+    height: 8px;
+    border-radius: 4px;
     background: ${props => props.theme.colors.green};
 
     transition: all 0.1s linear;
@@ -30,7 +30,7 @@ const Layout = styled.header`
 
   & > div > span {
     top: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     transform: translateX(-50%);
 

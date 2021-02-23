@@ -4,7 +4,7 @@ const Layout = styled.header`
   & > div {
     display: flex;
 
-    font-size: 7rem;
+    font-size: 10rem;
     font-weight: 700;
     text-align: center;
     color: ${props => props.theme.colors.title};
@@ -37,13 +37,13 @@ const Layout = styled.header`
     cursor: pointer;
     margin-top: 2rem;
     width: 100%;
-    height: 5rem;
+    height: 10rem;
 
     border: 0;
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.blue};
 
-    font-size: 2rem;
+    font-size: 3rem;
     color: ${props => props.theme.colors.white};
 
     transition: all 0.1s linear;

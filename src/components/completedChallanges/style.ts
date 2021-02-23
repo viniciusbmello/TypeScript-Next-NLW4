@@ -12,11 +12,11 @@ const Layout = styled.header`
   }
 
   & > span:first-child {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
 
   & > span:last-child {
-    font-size: 1.6rem;
+    font-size: 2.4rem;
   }
 `
 

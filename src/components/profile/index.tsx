@@ -8,7 +8,7 @@ const Profile: React.FC = () => {
     <Layout>
       <img src="https://github.com/viniciusbmello.png" alt="Profile Photo" />
       <div>
-        <strong>Vinícius Baptista de Mello</strong>
+        <strong>Vinícius Mello</strong>
         <p>
           <ArrowUpSvg />
           Level 1
