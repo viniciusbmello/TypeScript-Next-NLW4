@@ -1,11 +1,14 @@
 import styled from 'styled-components'
 
 const Layout = styled.header`
-  display: flex;
-  align-items: center;
+  & {
+    display: flex;
+    align-items: center;
+  }
 
-  span {
+  & > span {
     font-size: 1rem;
+    margin: 0 1rem;
   }
 
   & > div {
@@ -14,7 +17,7 @@ const Layout = styled.header`
     height: 4px;
     border-radius: 2px;
     background: ${props => props.theme.colors.grayLine};
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
   }
 
   & > div > div {
@@ -25,19 +28,26 @@ const Layout = styled.header`
 
   & > div > span {
     top: 10px;
+    font-size: 1rem;
     position: absolute;
     transform: translateX(-50%);
   }
 
   & > button {
-    width: 1.8rem;
-    margin: 0 1rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 
     background: ${props => props.theme.colors.green};
     color: ${props => props.theme.colors.white};
     border-radius: 25%;
     border: none;
+
+    transition: all 0.1s linear;
+  }
+
+  & > button:hover {
+    background: ${props => props.theme.colors.greenDark};
   }
 `
 
