@@ -3,8 +3,6 @@ import * as React from 'react'
 const SvgComponent: React.FC = (props: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg
-      width="1rem"
-      height="1rem"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512.171 512.171"
       {...props}

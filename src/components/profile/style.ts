@@ -4,12 +4,11 @@ const Layout = styled.header`
   & {
     display: flex;
     align-items: center;
-    justify-content: left;
   }
 
   & > img {
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
   }
 
@@ -26,7 +25,9 @@ const Layout = styled.header`
   }
 
   & > div > p > svg {
-    margin-right: 1rem;
+    margin-right: 0.5rem;
+    width: 1rem;
+    height: 1rem;
     fill: ${props => props.theme.colors.green};
   }
 `
