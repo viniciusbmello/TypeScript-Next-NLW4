@@ -24,8 +24,15 @@ const Layout = styled.header`
   }
 
   & > div > span {
+    top: 10px;
     position: absolute;
     transform: translateX(-50%);
+  }
+
+  & > div > span > button {
+    width: 2rem;
+    margin: 0 1rem;
+    cursor: pointer;
   }
 `
 
