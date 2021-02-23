@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  /* Mobile First */
   :root {
     font-size: 62.5%
   }
