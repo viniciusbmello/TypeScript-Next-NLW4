@@ -30,9 +30,14 @@ const Layout = styled.header`
   }
 
   & > button {
-    width: 2rem;
+    width: 1.8rem;
     margin: 0 1rem;
     cursor: pointer;
+
+    background: ${props => props.theme.colors.green};
+    color: ${props => props.theme.colors.white};
+    border-radius: 25%;
+    border: none;
   }
 `
 
