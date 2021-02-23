@@ -1,16 +1,17 @@
+import { NextPage } from 'next'
 import Head from 'next/head'
 
-export default function Home() {
+const IndexPage: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>Create Next App</title>
       </Head>
-
       <main>
         <h1>Hello NLW</h1>
       </main>
-        
-    </div>
+    </>
   )
 }
+
+export default IndexPage
