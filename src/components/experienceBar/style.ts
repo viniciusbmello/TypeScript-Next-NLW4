@@ -29,7 +29,7 @@ const Layout = styled.header`
     transform: translateX(-50%);
   }
 
-  & > div > span > button {
+  & > button {
     width: 2rem;
     margin: 0 1rem;
     cursor: pointer;
