@@ -7,22 +7,26 @@ const ExperienceBar: React.FC = () => {
   return (
     <Layout>
       <button
-        onClick={() => setCurrentExp(currentExp > 0 ? currentExp - 50 : 0)}
+        onClick={() => {
+          setCurrentExp(currentExp > 0 ? currentExp - 50 : 0)
+        }}
       >
-        -
+        <span>-</span>
       </button>
       <span>0 xp</span>
       <div>
         <div style={{ width: `${(currentExp / 600) * 100}%` }} />
         <span style={{ left: `${(currentExp / 600) * 100}%` }}>
-          {currentExp} px
+          {currentExp}xp
         </span>
       </div>
       <span>600 xp</span>
       <button
-        onClick={() => setCurrentExp(currentExp < 600 ? currentExp + 50 : 600)}
+        onClick={() => {
+          setCurrentExp(currentExp < 600 ? currentExp + 50 : 600)
+        }}
       >
-        +
+        <span>+</span>
       </button>
     </Layout>
   )
