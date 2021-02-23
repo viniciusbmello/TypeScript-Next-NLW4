@@ -11,7 +11,7 @@ const Profile: React.FC = () => {
         <strong>Vinícius Baptista de Mello</strong>
         <p>
           <ArrowUpSvg />
-          Levle 1
+          Level 1
         </p>
       </div>
     </Layout>
