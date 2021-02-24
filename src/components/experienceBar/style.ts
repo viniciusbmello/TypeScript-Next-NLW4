@@ -29,7 +29,7 @@ const Layout = styled.div`
   }
 
   & > div > span {
-    top: -2rem;
+    top: -1.8rem;
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
@@ -39,8 +39,8 @@ const Layout = styled.div`
   }
 
   & > div > span > span:first-child {
-    border-radius: 0.2rem;
-    border: 0.1rem solid ${props => props.theme.colors.green};
+    border-radius: 0.4rem;
+    border: 0.2rem solid ${props => props.theme.colors.green};
     background: ${props => props.theme.colors.green};
     color: ${props => props.theme.colors.white};
   }

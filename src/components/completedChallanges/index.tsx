@@ -5,7 +5,7 @@ const CompletedChallanges: React.FC = () => {
   return (
     <Layout>
       <span>Desafios Completos:</span>
-      <span>&nbsp;{'6'}&nbsp;</span>
+      <span>{'6'}</span>
     </Layout>
   )
 }
