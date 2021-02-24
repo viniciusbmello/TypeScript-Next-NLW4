@@ -44,13 +44,13 @@ const GlobalStyle = createGlobalStyle`
 
 @media screen and (min-width: 720px) {
   :root {
-    font-size: 87.5%
+    font-size: 75%;
   }
 }
 
   @media screen and (min-width: 1100px) {
     :root {
-    font-size: 100%;
+    font-size: 87.5%;
   }
 
     body > div  {
