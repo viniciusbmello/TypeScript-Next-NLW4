@@ -10,13 +10,13 @@ const Layout = styled.div`
     justify-content: center;
     text-align: center;
 
-    padding: 0 1rem;
+    padding: 2rem;
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.white};
   }
 
   & > strong {
-    padding: 0 3rem;
+    font-size: 2rem;
   }
 
   & > svg {
@@ -27,8 +27,7 @@ const Layout = styled.div`
   }
 
   & > p {
-    padding: 0 4rem;
-    font-size: 1.4rem;
+    padding: 0 2rem;
   }
 `
 
