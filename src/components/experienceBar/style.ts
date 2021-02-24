@@ -8,7 +8,6 @@ const Layout = styled.header`
 
   & > span {
     font-size: 1.2rem;
-    margin: 0 1rem;
   }
 
   & > div {
@@ -17,7 +16,8 @@ const Layout = styled.header`
     height: 8px;
     border-radius: 4px;
     background: ${props => props.theme.colors.grayLine};
-    /* margin: 0 1rem; */
+
+    margin: 0 1rem;
   }
 
   & > div > div {
@@ -35,23 +35,6 @@ const Layout = styled.header`
     transform: translateX(-50%);
 
     transition: all 0.1s linear;
-  }
-
-  & > button {
-    width: 2rem;
-    height: 2rem;
-    cursor: pointer;
-
-    background: ${props => props.theme.colors.green};
-    color: ${props => props.theme.colors.white};
-    border-radius: 25%;
-    border: none;
-
-    transition: all 0.1s linear;
-  }
-
-  & > button:hover {
-    background: ${props => props.theme.colors.greenDark};
   }
 `
 

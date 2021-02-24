@@ -4,7 +4,7 @@ const Layout = styled.header`
   & > div {
     display: flex;
 
-    font-size: 10rem;
+    font-size: 7rem;
     font-weight: 700;
     text-align: center;
     color: ${props => props.theme.colors.title};
@@ -37,20 +37,29 @@ const Layout = styled.header`
     cursor: pointer;
     margin-top: 2rem;
     width: 100%;
-    height: 10rem;
+    height: 5rem;
 
     border: 0;
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.blue};
 
-    font-size: 3rem;
+    font-size: 2.4rem;
+    text-transform: uppercase;
     color: ${props => props.theme.colors.white};
 
     transition: all 0.1s linear;
   }
 
+  & > button.countdownIsActive {
+    background: ${props => props.theme.colors.red};
+  }
+
   & > button:hover {
     background: ${props => props.theme.colors.blueDark};
+  }
+
+  & > button.countdownIsActive:hover {
+    background: ${props => props.theme.colors.redDark};
   }
 `
 
