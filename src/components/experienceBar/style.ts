@@ -67,7 +67,7 @@ const Layout = styled.div`
       opacity: 1;
     }
     100% {
-      top: -1rem;
+      top: 1.8rem;
       opacity: 0;
     }
   }
