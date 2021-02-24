@@ -57,8 +57,8 @@ const Layout = styled.div`
   & > button:disabled {
     color: ${props => props.theme.colors.text};
     background: ${props => props.theme.colors.white};
-    height: 5.2rem;
     border-bottom: 0.2rem solid ${props => props.theme.colors.green};
+    border-top: 0.2rem solid rgba(255, 255, 255, 0);
     cursor: not-allowed;
   }
 
