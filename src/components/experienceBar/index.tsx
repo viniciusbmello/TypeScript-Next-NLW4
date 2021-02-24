@@ -8,10 +8,10 @@ const ExperienceBar: React.FC = () => {
     <Layout>
       <span>0 xp</span>
       <div>
-        <div style={{ width: `${(currentExp / 600) * 100}%` }} />
         <span style={{ left: `${(currentExp / 600) * 100}%` }}>
           {currentExp}
         </span>
+        <div style={{ width: `${(currentExp / 600) * 100}%` }} />
       </div>
       <span>600 xp</span>
     </Layout>

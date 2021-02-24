@@ -6,35 +6,34 @@ const Layout = styled.div`
     align-items: center;
   }
 
-  & > span {
-    font-size: 1.2rem;
+  & span {
+    font-size: 1rem;
   }
 
   & > div {
     position: relative;
     flex: 1;
-    height: 1.2rem;
-    border-radius: 0.6rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
     background: ${props => props.theme.colors.grayLine};
 
     margin: 0 1rem;
   }
 
   & > div > div {
-    height: 1.2rem;
-    border-radius: 0.6rem;
+    height: 0.4rem;
+    border-radius: 0.2rem;
     background: ${props => props.theme.colors.green};
 
     transition: all 0.1s linear;
   }
 
   & > div > span {
-    top: 0;
-    font-size: 1rem;
+    top: -1rem;
     position: absolute;
     padding-right: 0.5rem;
-    transform: translateX(-100%);
-    color: ${props => props.theme.colors.white};
+    transform: translateX(-50%);
+    color: ${props => props.theme.colors.green};
 
     transition: all 0.1s linear;
   }
