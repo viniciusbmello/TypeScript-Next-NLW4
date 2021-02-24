@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Layout = styled.header`
+const Layout = styled.div`
   & > div {
     display: flex;
 
