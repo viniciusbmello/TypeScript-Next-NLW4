@@ -37,7 +37,17 @@ const GlobalStyle = createGlobalStyle`
     color: ${props => props.theme.colors.text};
   }
 
-  @media screen and (min-width: 1000px) {
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 87.5%
+  }
+}
+
+  @media screen and (min-width: 1100px) {
+    :root {
+    font-size: 100%;
+  }
+
     body > div  {
       max-width: 992px;
     }

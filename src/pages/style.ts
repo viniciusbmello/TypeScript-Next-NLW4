@@ -6,17 +6,19 @@ const Layout = styled.main`
     width: 100%;
   }
 
-  & > section > div {
+  & > section {
     margin: 2rem 0;
   }
 
-  & > section > div:last-child {
-    background: ${props => props.theme.colors.white};
+  & > section > div {
     height: 100%;
-    border-radius: 0.5rem;
   }
 
-  @media screen and (min-width: 1000px) {
+  & > section > div:last-child {
+    margin: 2rem 0;
+  }
+
+  @media screen and (min-width: 1100px) {
     & {
       display: flex;
       flex-direction: column;
@@ -31,6 +33,12 @@ const Layout = styled.main`
       grid-template-columns: 1fr 1fr;
       gap: 5rem;
       align-items: center;
+
+      margin: 4rem 0;
+    }
+
+    & > section > div:last-child {
+      margin: 0 0;
     }
   }
 `
