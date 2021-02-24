@@ -7,7 +7,7 @@ const Layout = styled.header`
     justify-content: space-between;
 
     margin: 2rem 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
     border-bottom: 1px solid ${props => props.theme.colors.grayLine};
   }
 
@@ -17,12 +17,8 @@ const Layout = styled.header`
 
   & > span:last-child {
     font-size: 2rem;
-    width: 2.4rem;
-    text-align: center;
-
-    border-radius: 4px;
-    background: ${props => props.theme.colors.green};
-    color: ${props => props.theme.colors.white};
+    font-weight: 700;
+    color: ${props => props.theme.colors.blue};
   }
 `
 

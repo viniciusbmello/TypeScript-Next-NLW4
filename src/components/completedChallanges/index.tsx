@@ -4,8 +4,8 @@ import Layout from './style'
 const CompletedChallanges: React.FC = () => {
   return (
     <Layout>
-      <span>Desafios Completos</span>
-      <span>5</span>
+      <span>Desafios Completos:</span>
+      <span>&nbsp;{'6'}&nbsp;</span>
     </Layout>
   )
 }

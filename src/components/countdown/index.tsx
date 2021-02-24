@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react'
+
 import Layout from './style'
+import CheckSvg from '../../assets/svg/check'
 
 let countdownTimeout: NodeJS.Timeout
 
 const Countdown: React.FC = () => {
-  const [time, setTime] = useState(25 * 60)
+  const [time, setTime] = useState(0.05 * 60)
   const [isActive, setIsActive] = useState(false)
+  const [hasFinished, setHasFinished] = useState(false)
 
   const minutes = Math.floor(time / 60)
   const seconds = time % 60
@@ -20,7 +23,7 @@ const Countdown: React.FC = () => {
   function resetCountdown() {
     clearTimeout(countdownTimeout)
     setIsActive(false)
-    setTime(25 * 60)
+    setTime(0.05 * 60)
   }
 
   useEffect(() => {
@@ -28,6 +31,9 @@ const Countdown: React.FC = () => {
       countdownTimeout = setTimeout(() => {
         setTime(time - 1)
       }, 1000)
+    } else if (isActive && time === 0) {
+      setHasFinished(true)
+      setIsActive(false)
     }
   }, [isActive, time])
 
@@ -44,18 +50,27 @@ const Countdown: React.FC = () => {
           <span>{secondsRight}</span>
         </div>
       </div>
-      {isActive ? (
-        <button
-          type="button"
-          className="countdownIsActive"
-          onClick={resetCountdown}
-        >
-          Abandonar ciclo
+      {hasFinished ? (
+        <button disabled>
+          Ciclo Encerrado
+          <CheckSvg />
         </button>
       ) : (
-        <button type="button" onClick={startCountdown}>
-          Iniciar ciclo
-        </button>
+        <>
+          {isActive ? (
+            <button
+              type="button"
+              className="countdownIsActive"
+              onClick={resetCountdown}
+            >
+              Abandonar ciclo
+            </button>
+          ) : (
+            <button type="button" onClick={startCountdown}>
+              Iniciar ciclo
+            </button>
+          )}
+        </>
       )}
     </Layout>
   )

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Layout = styled.main`
   & {
     margin: 0 auto;
-    padding-top: 5vh;
+    padding-top: 2rem;
     width: 100%;
   }
 

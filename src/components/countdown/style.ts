@@ -43,23 +43,38 @@ const Layout = styled.header`
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.blue};
 
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     text-transform: uppercase;
     color: ${props => props.theme.colors.white};
 
     transition: all 0.1s linear;
   }
 
+  & > button:disabled {
+    color: ${props => props.theme.colors.text};
+    background: ${props => props.theme.colors.white};
+    height: 5.2rem;
+    border-bottom: 0.2rem solid ${props => props.theme.colors.green};
+    cursor: not-allowed;
+  }
+
+  & > button:not(:disabled):hover {
+    background: ${props => props.theme.colors.blueDark};
+  }
+
   & > button.countdownIsActive {
     background: ${props => props.theme.colors.red};
   }
 
-  & > button:hover {
-    background: ${props => props.theme.colors.blueDark};
-  }
-
   & > button.countdownIsActive:hover {
     background: ${props => props.theme.colors.redDark};
+  }
+
+  & > button svg {
+    margin-left: 0.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    fill: ${props => props.theme.colors.green};
   }
 `
 

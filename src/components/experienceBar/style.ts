@@ -13,26 +13,28 @@ const Layout = styled.header`
   & > div {
     position: relative;
     flex: 1;
-    height: 8px;
-    border-radius: 4px;
+    height: 10px;
+    border-radius: 5px;
     background: ${props => props.theme.colors.grayLine};
 
     margin: 0 1rem;
   }
 
   & > div > div {
-    height: 8px;
-    border-radius: 4px;
+    height: 10px;
+    border-radius: 5px;
     background: ${props => props.theme.colors.green};
 
     transition: all 0.1s linear;
   }
 
   & > div > span {
-    top: 10px;
-    font-size: 1.2rem;
+    top: -1px;
+    font-size: 10px;
     position: absolute;
-    transform: translateX(-50%);
+    padding-right: 2px;
+    transform: translateX(-100%);
+    color: ${props => props.theme.colors.white};
 
     transition: all 0.1s linear;
   }
