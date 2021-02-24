@@ -16,6 +16,7 @@ const Layout = styled.div`
   }
 
   & > strong {
+    padding: 0 1rem;
     font-size: 2rem;
   }
 
