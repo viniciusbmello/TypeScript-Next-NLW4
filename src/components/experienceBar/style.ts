@@ -30,7 +30,7 @@ const Layout = styled.div`
 
   & > div > span {
     top: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     position: absolute;
     padding-right: 0.5rem;
     transform: translateX(-100%);
