@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react'
 
 import Layout from './style'
 import CheckSvg from '../../assets/svg/check'
+import CloseSVG from '../../assets/svg/close'
+import ClockSvg from '../../assets/svg/clock'
 
 let countdownTimeout: NodeJS.Timeout
 
 const Countdown: React.FC = () => {
-  const [time, setTime] = useState(0.05 * 60)
+  const [time, setTime] = useState(0.1 * 60)
   const [isActive, setIsActive] = useState(false)
   const [hasFinished, setHasFinished] = useState(false)
 
@@ -23,7 +25,7 @@ const Countdown: React.FC = () => {
   function resetCountdown() {
     clearTimeout(countdownTimeout)
     setIsActive(false)
-    setTime(0.05 * 60)
+    setTime(0.1 * 60)
   }
 
   useEffect(() => {
@@ -64,10 +66,12 @@ const Countdown: React.FC = () => {
               onClick={resetCountdown}
             >
               Abandonar ciclo
+              <CloseSVG />
             </button>
           ) : (
             <button type="button" onClick={startCountdown}>
               Iniciar ciclo
+              <ClockSvg />
             </button>
           )}
         </>

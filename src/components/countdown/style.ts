@@ -43,6 +43,10 @@ const Layout = styled.div`
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.blue};
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     font-size: 1.8rem;
     text-transform: uppercase;
     color: ${props => props.theme.colors.white};
@@ -71,10 +75,14 @@ const Layout = styled.div`
   }
 
   & > button svg {
-    margin-left: 0.5rem;
-    width: 1.4rem;
-    height: 1.4rem;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
     fill: ${props => props.theme.colors.green};
+  }
+
+  & > button:not(:disabled) svg {
+    fill: ${props => props.theme.colors.white};
   }
 `
 
