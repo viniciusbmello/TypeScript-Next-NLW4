@@ -3,8 +3,11 @@ import styled from 'styled-components'
 const Layout = styled.main`
   & {
     margin: 0 auto;
-    padding-top: 2rem;
     width: 100%;
+  }
+
+  & > section > div {
+    margin: 2rem 0;
   }
 
   & > section > div:last-child {

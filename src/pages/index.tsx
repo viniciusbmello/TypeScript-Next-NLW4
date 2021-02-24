@@ -4,6 +4,7 @@ import Head from 'next/head'
 import Profile from '../components/profile'
 import CompletedChallanges from '../components/completedChallanges'
 import Countdown from '../components/countdown'
+import ChallangeBox from '../components/challangeBox'
 
 import Layout from './style'
 
@@ -20,7 +21,9 @@ const IndexPage: NextPage = () => {
             <CompletedChallanges />
             <Countdown />
           </div>
-          <div />
+          <div>
+            <ChallangeBox />
+          </div>
         </section>
       </Layout>
     </>
