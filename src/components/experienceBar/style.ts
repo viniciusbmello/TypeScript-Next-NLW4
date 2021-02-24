@@ -29,13 +29,25 @@ const Layout = styled.div`
   }
 
   & > div > span {
-    top: -1rem;
+    top: -2rem;
     position: absolute;
-    padding-right: 0.5rem;
     transform: translateX(-50%);
-    color: ${props => props.theme.colors.green};
+    text-align: center;
+    line-height: 0.9rem;
 
     transition: all 0.1s linear;
+  }
+
+  & > div > span > span:first-child {
+    border-radius: 0.2rem;
+    border: 0.1rem solid ${props => props.theme.colors.green};
+    background: ${props => props.theme.colors.green};
+    color: ${props => props.theme.colors.white};
+  }
+
+  & > div > span > span:last-child {
+    background: none;
+    color: ${props => props.theme.colors.green};
   }
 `
 

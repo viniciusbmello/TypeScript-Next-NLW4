@@ -2,14 +2,16 @@ import React, { useState } from 'react'
 import Layout from './style'
 
 const ExperienceBar: React.FC = () => {
-  const [currentExp, setCurrentExp] = useState(300)
+  const [currentExp] = useState(300)
 
   return (
     <Layout>
       <span>0 xp</span>
       <div>
         <span style={{ left: `${(currentExp / 600) * 100}%` }}>
-          {currentExp}
+          <span>{currentExp}</span>
+          <br />
+          <span>▼</span>
         </span>
         <div style={{ width: `${(currentExp / 600) * 100}%` }} />
       </div>
