@@ -18,6 +18,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  body {
     background: ${props => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility; 
