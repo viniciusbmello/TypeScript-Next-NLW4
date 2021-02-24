@@ -13,16 +13,16 @@ const Layout = styled.div`
   & > div {
     position: relative;
     flex: 1;
-    height: 12px;
-    border-radius: 6px;
+    height: 1.2rem;
+    border-radius: 0.6rem;
     background: ${props => props.theme.colors.grayLine};
 
     margin: 0 1rem;
   }
 
   & > div > div {
-    height: 12px;
-    border-radius: 6px;
+    height: 1.2rem;
+    border-radius: 0.6rem;
     background: ${props => props.theme.colors.green};
 
     transition: all 0.1s linear;
@@ -30,9 +30,9 @@ const Layout = styled.div`
 
   & > div > span {
     top: 0;
-    font-size: 10px;
+    font-size: 1.1rem;
     position: absolute;
-    padding-right: 5px;
+    padding-right: 0.5rem;
     transform: translateX(-100%);
     color: ${props => props.theme.colors.white};
 
