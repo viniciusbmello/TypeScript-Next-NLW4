@@ -29,7 +29,7 @@ const Layout = styled.div`
   }
 
   & > div > span {
-    top: -1.8rem;
+    top: 0.4rem;
     position: absolute;
     transform: translateX(-50%);
     text-align: center;
@@ -38,14 +38,14 @@ const Layout = styled.div`
     transition: all 0.1s linear;
   }
 
-  & > div > span > span:first-child {
+  & > div > span > span:last-child {
     border-radius: 0.4rem;
     border: 0.2rem solid ${props => props.theme.colors.green};
     background: ${props => props.theme.colors.green};
     color: ${props => props.theme.colors.white};
   }
 
-  & > div > span > span:last-child {
+  & > div > span > span:first-child {
     background: none;
     color: ${props => props.theme.colors.green};
   }
